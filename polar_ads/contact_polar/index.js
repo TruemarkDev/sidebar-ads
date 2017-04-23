@@ -18,8 +18,6 @@ $(document).ready(function () {
     // successField.addClass('form-valid-data');
     //
     //
-    // var $form = $("#ad-with-us");
-    var checkBeforeSubmit = function () {
 
-    }
+    $('.alert-success').hide();
 });
