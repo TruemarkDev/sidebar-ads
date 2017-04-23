@@ -28,7 +28,7 @@
         function checkBeforeSubmit() {
             var $form = $("#ad-with-us");
             $form.submit();
-            $('.alert-success').fadeIn(300);
+//            $('.alert-success').fadeIn(300);
             setTimeout(function () {
                 $form.find("input[type=text], input[type=email], textarea").val("");
             }, 1000);
@@ -39,111 +39,111 @@
 <body>
 
 <!-- Page Content -->
-<div class="container">
+<!--<div class="container">-->
 
-    <div class="row">
-        <div class="col-lg-12">
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                    src="https://script.google.com/macros/s/AKfycbycZnQgcG59Mkka0ilG1msjgpHGBQrBc3mplAo4AivHyq_dHZYt/exec"></iframe>
-            <form id="ad-with-us" class="form-validation" method="post"
-                  action="https://script.google.com/macros/s/AKfycbycZnQgcG59Mkka0ilG1msjgpHGBQrBc3mplAo4AivHyq_dHZYt/exec"
-                  target="hidden_iframe">
-                <div class="alert alert-success alert-dismissable" style="display: none;">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Thank You!</strong> You will be contacted by our representatives very soon!
-                </div>
-                <div class="form-title-row">
-                    <h1>Advertise With Us</h1>
-                </div>
+<div class="row">
+    <div class="col-lg-12">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                src="https://script.google.com/macros/s/AKfycbycZnQgcG59Mkka0ilG1msjgpHGBQrBc3mplAo4AivHyq_dHZYt/exec"></iframe>
+        <form id="ad-with-us" class="form-validation" method="post"
+              action="https://script.google.com/macros/s/AKfycbycZnQgcG59Mkka0ilG1msjgpHGBQrBc3mplAo4AivHyq_dHZYt/exec"
+              target="hidden_iframe">
+            <div class="alert alert-success alert-dismissable" style="display: none;">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Thank You!</strong> You will be contacted by our representatives very soon!
+            </div>
+            <div class="form-title-row">
+                <h1>Advertise With Us</h1>
+            </div>
 
-                <div class="form-row form-input-name-row">
+            <div class="form-row form-input-name-row">
 
-                    <label>
-                        <span>Full name*</span>
-                        <input type="text" name="name" placeholder="Full Name" required>
-                    </label>
+                <label>
+                    <span>Full name*</span>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </label>
 
-                    <!--
-                        Add these three elements to every form row. They will be shown by the
-                        .form-valid-data and .form-invalid-data classes (see the JS for an example).
-                    -->
+                <!--
+                    Add these three elements to every form row. They will be shown by the
+                    .form-valid-data and .form-invalid-data classes (see the JS for an example).
+                -->
 
-                    <span class="form-valid-data-sign"><i class="fa fa-check"></i></span>
+                <span class="form-valid-data-sign"><i class="fa fa-check"></i></span>
 
-                    <span class="form-invalid-data-sign"><i class="fa fa-close"></i></span>
-                    <span class="form-invalid-data-info"></span>
+                <span class="form-invalid-data-sign"><i class="fa fa-close"></i></span>
+                <span class="form-invalid-data-info"></span>
 
-                </div>
+            </div>
 
-                <div class="form-row form-input-site-row">
+            <div class="form-row form-input-site-row">
 
-                    <label>
-                        <span>Website*</span>
-                        <input type="text" name="site" placeholder="Your Website" required>
-                    </label>
+                <label>
+                    <span>Website*</span>
+                    <input type="text" name="site" placeholder="Your Website" required>
+                </label>
 
-                    <!--
-                        Add these three elements to every form row. They will be shown by the
-                        .form-valid-data and .form-invalid-data classes (see the JS for an example).
-                    -->
+                <!--
+                    Add these three elements to every form row. They will be shown by the
+                    .form-valid-data and .form-invalid-data classes (see the JS for an example).
+                -->
 
-                    <span class="form-valid-data-sign"><i class="fa fa-check"></i></span>
+                <span class="form-valid-data-sign"><i class="fa fa-check"></i></span>
 
-                    <span class="form-invalid-data-sign"><i class="fa fa-close"></i></span>
-                    <span class="form-invalid-data-info"></span>
+                <span class="form-invalid-data-sign"><i class="fa fa-close"></i></span>
+                <span class="form-invalid-data-info"></span>
 
-                </div>
+            </div>
 
-                <div class="form-row form-input-email-row">
+            <div class="form-row form-input-email-row">
 
-                    <label>
-                        <span>Email*</span>
-                        <input type="email" name="email" placeholder="eg: email@domain.com" required>
-                    </label>
+                <label>
+                    <span>Email*</span>
+                    <input type="email" name="email" placeholder="eg: email@domain.com" required>
+                </label>
 
-                    <span class="form-valid-data-sign"><i class="fa fa-check"></i></span>
+                <span class="form-valid-data-sign"><i class="fa fa-check"></i></span>
 
-                    <span class="form-invalid-data-sign"><i class="fa fa-close"></i></span>
-                    <span class="form-invalid-data-info"></span>
+                <span class="form-invalid-data-sign"><i class="fa fa-close"></i></span>
+                <span class="form-invalid-data-info"></span>
 
-                </div>
+            </div>
 
-                <div class="form-row">
+            <div class="form-row">
 
-                    <label>
-                        <span>Duration*</span>
-                        <select name="duration_in_days" required>
-                            <option value="7">1 Week</option>
-                            <option value="14">2 Weeks</option>
-                            <option value="21">3 Weeks</option>
-                            <option value="28">4 Weeks</option>
-                            <option value="0">Longer (discuss later)</option>
-                        </select>
-                    </label>
+                <label>
+                    <span>Duration*</span>
+                    <select name="duration_in_days" required>
+                        <option value="7">1 Week</option>
+                        <option value="14">2 Weeks</option>
+                        <option value="21">3 Weeks</option>
+                        <option value="28">4 Weeks</option>
+                        <option value="0">Longer (discuss later)</option>
+                    </select>
+                </label>
 
-                </div>
+            </div>
 
-                <div class="form-row">
+            <div class="form-row">
 
-                    <button type="submit" onclick="checkBeforeSubmit();">Submit</button>
+                <button type="submit" onclick="checkBeforeSubmit();">Submit</button>
 
-                </div>
+            </div>
 
-            </form>
-        </div>
+        </form>
     </div>
-
-
-    <!-- Footer -->
-    <!--<footer>-->
-    <!--<div class="row">-->
-    <!--<div class="col-lg-12 text-center" style="padding: 10px">-->
-    <!--<p>Powered by Polar Apps</p>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</footer>-->
-
 </div>
+
+
+<!-- Footer -->
+<!--<footer>-->
+<!--<div class="row">-->
+<!--<div class="col-lg-12 text-center" style="padding: 10px">-->
+<!--<p>Powered by Polar Apps</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</footer>-->
+
+<!--</div>-->
 <!-- /.container -->
 
 <!-- jQuery -->
